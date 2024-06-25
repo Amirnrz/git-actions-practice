@@ -1,0 +1,8 @@
+name: output
+on: issues
+jobs:
+  outputDetail:
+    runs-on: windows-latest
+    steps:
+      - name: Output issue detail
+        run: echo "${{ github }}"
