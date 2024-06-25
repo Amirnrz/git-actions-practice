@@ -9,4 +9,4 @@ jobs:
       - name: install node-js
         uses: actions/setup-node@v3
       - name: Run Lint
-        run: npm lint
+        run: npm run lint
