@@ -5,4 +5,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Output issue detail
-        run: echo "${{ toJson(github) }}"
+        run: echo "Issue number ${{ github.event.issue.number }}"
+             echo "issue title ${{ github.event.issue.title }}"
