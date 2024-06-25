@@ -1,5 +1,5 @@
 name: output
-on: issues
+on: [issues, workflow_dispatch]
 jobs:
   outputDetail:
     runs-on: windows-latest
