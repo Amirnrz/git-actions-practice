@@ -1,0 +1,12 @@
+name: deploy project
+on: push
+jobs: 
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out git repo
+        uses: actions/checkout@v3
+      - name: install node-js
+        uses: actions/setup-node@v3
+      - name: Run Lint
+        run: npm lint
